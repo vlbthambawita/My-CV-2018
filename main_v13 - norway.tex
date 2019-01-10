@@ -1,0 +1,421 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,scan]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+% personal data
+\name{Vajira}{Thambawita} 
+\title{\small Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+%\address{94$\backslash$1, Mawanella Road, Hemmathagama, KE 71530, Sri Lanka}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\address{Simula Research Laboratory}{P.O.Box 134, 1325, Lysaker}{Norway}
+
+\phone[mobile]{+4790806683}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{vlbthambawita@gmail.com, vajira@simula.no}                               % optional, remove / comment the line if not wanted
+\homepage{sites.google.com/view/vajira-thambawita}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+%\small{To become a leading researcher in the areas of Parallel Computing, Bioinformatics, Computer Architecture, AI, Embedded Systems and to enrich the knowledge of the aforementioned subject areas by making genuine individual contributions.}
+
+%\section{Personal details}
+\vspace{-25pt}
+%\begin{itemize}
+%	\item Gender: Male
+%	\item Nationality: Sri Lankan
+%	\item NIC No: 872300244V
+%	\item Date of Birth: 1987/08/17
+%\end{itemize}
+\section{Education}
+
+\vspace{3pt}
+
+%\subsection{Academic Qualifications}
+
+%\vspace{5pt}
+
+\begin{itemize}
+
+    \vspace{3pt}
+	
+	\item{\cventry{Norway}{Simula Research Laboratory  and Oslo Metropolitan University}{PhD - Engineering Science}{May 2018--Present}{}{}}
+	
+	\vspace{3pt}
+	
+	\item{\cventry{Sri Lanka}{Department of Computer Engineering, University of Peradeniya}{MPhil}{2011--2017}{}{}}
+	
+	\vspace{3pt}	
+	\item{\cventry{Sri Lanka}{Department of Computer Engineering, University of Peradeniya}{BSc. Eng. (Honors) in Computer Engineering}{2007--2011}{}{Graduated with Second Class Honors (Upper Division) with a GPA of 3.65 out of 4.00}}
+	
+\end{itemize}
+
+%\vspace{2pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage
+
+\renewcommand{\refname}{Publications}
+\renewcommand{\bibliographyitemlabel}{\@{\arabic{enumiv}}}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Employment and Experiences}
+
+\vspace{6pt}
+
+\begin{itemize}
+	
+\item{\cventry{Uva Wellasssa University, Sri Lanka}{Department of Computer Science}{Lecturer (Probationary)}{August 2013--present}{}{
+		\begin{itemize}
+			\vspace{6pt}
+			\item \textbf{Teaching:} Microcomputer Architecture and Logic Design, Advanced Database Management Systems, Artificial Intelligent Systems, Fuzzy Logic and Fuzzy Controllers, Cryptographic Systems, System Level Programming, Computer Systems Architecture
+			\vspace{6pt}
+			%\item \textbf{Member of the Faculty Board:} Faculty of Science and Technology, Uva Wellassa University.
+			%\vspace{6pt}
+		%	\item \textbf{Member of Curriculum Development Committee:} Department of Computer Science and Technology, Uva Wellassa University.
+			%\vspace{6pt}
+		%	\item \textbf{Symposium Track Coordinator:} (Computer Science and Technology - 2014), Uva Wellassa University.
+		%	\vspace{2pt}
+		%	\item \textbf{Member of Symposium Organizing Committee (2018)}.
+		%	\vspace{6pt}
+			\item \textbf{Supervision:} Undergraduate Research Projects
+			\vspace{6pt}
+		%	\item \textbf{Member of Institution Review Team (2017-2018)}.
+		\end{itemize}
+		}}
+\vspace{3pt}
+
+\item{\cventry{Sabaragamuwa University, Sri Lanka}{Department of Computing and Information Systems}{Visiting Lecturer}{May 2017--November 2017}{}{
+		\begin{itemize}
+			\vspace{6pt}
+			\item \textbf{Teaching:} Embedded Systems
+		\end{itemize}
+	}}
+	\vspace{3pt}
+
+\item{\cventry{Uva Wellasssa University, Sri Lanka}{Department of Computer Science}{Lecturer (Temporary)}{April 2013--August 2013}{}{
+		\begin{itemize}
+			\vspace{6pt}
+			\item \textbf{Teaching:} Distributed and Parallel Computing, Microelectronics
+			\vspace{6pt}
+			\item \textbf{Temporary Computer System Analyst}
+		\end{itemize}
+		}}
+\vspace{3pt}
+
+%\newpage
+\item{\cventry{University of Peradeniya, Sri Lanka}{Department of Computer Engineering}{Instructor (Temporary)}{September 2011--April 2013}{}{
+		\begin{itemize}
+			\vspace{6pt}
+			\item \textbf{Conducting Laboratory Classes and Preparing Handouts:} Logic Networks, Computer Interfacing, Computer Architecture, Programming Language, Systems and Network Programming Lab and Project, Computer Programming, Computing, Operating Systems
+		\end{itemize}
+		}}
+\vspace{3pt}
+
+%\newpage
+
+
+\item{\cventry{Sri Lanka}{Air Force Head Quarters}{Software Engineer (Undergraduate Trainee)}{May 2010--November 2010}{}{
+		\begin{itemize}
+			\vspace{6pt}
+			\item \textbf{Software development:} Humen Resource Mangement System
+		\end{itemize}
+		}}
+
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Technical and personal skills}
+
+\vspace{3pt}
+
+\begin{itemize}
+	
+	\item \textbf{Programming Languages and frameworks:} Proficient in: C, CUDA, Pytorch, Python, Tensorflow, Latex, Shell scripting \\ Also basic ability with: Assembly, VBA, VHDL, JAVA, Matlab, HTML, CSS.
+	
+	
+	\vspace{6pt}
+	
+	\item \textbf{Other:} Good teaching skills, Presentation skills, Severs handling (Linux and Windows), Creative Thinking (Won the 1st place two times in Topcoder design competitions).
+	
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage
+
+%\renewcommand{\refname}{Publications}
+%\renewcommand{\bibliographyitemlabel}{\@{\arabic{enumiv}}}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+\section{Projects}
+
+\subsection{Individual contributions}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\textbf{Cache Optimization Techniques for the General
+		Purpose Graphic Processing Unit:} \textit{MPhil Project}
+
+\vspace{3pt}
+
+\small{Achieving high-performance output using GPGPUs are not the easy task compared with normal programming concepts. In this research, the CPU memory optimization techniques have been adopted into the GPGPU to identify rare cache performance improvement techniques rather than common GPGPU’s best practices}}
+
+%\newpage
+\vspace{6pt}
+
+\item{\textbf{Low cost Tele-Presence Robot:} \textit{$4^{th}$ year undergraduate final project}
+
+\vspace{3pt}
+
+\small{The Tele-presence robot can be used to appear or present at a separate location virtually instead of human presenter. The robot which is built from low cost components achieves the task of Tele-presence robot}}
+
+\vspace{6pt}
+
+%\newpage
+
+\item{\textbf{WIFI Robotic car:}\textit{Project developed for the department as an exhibition item}
+
+\vspace{3pt}
+
+\small{This robotic car is controlled remotely via WIFI network to drive into unaccessible locations. It is capable of giving a real time video feedback and sound feedback to the controlling end}}
+
+\end{itemize}
+
+\subsection{Undergraduate research projects supervised by me \\ (published in Uva Wellassa University symposiums)}
+\begin{itemize}
+	
+	\item {\textbf{Automated Dispensary Mechanism for Government Hospitals}\textit{ - Research Symposium 2016, Uva Wellasssa University}}
+	\vspace{6pt}
+	
+	\item {\textbf{Fuzzy Logic and Fingerprint Based System  to Improve the Productivity of Teaching Process in Sri Lankan Schools} \textit{ - Research Symposium 2016, Uva Wellasssa University}}
+	\vspace{6pt}
+	
+	\item {\textbf{Real Time Traffic Light Time Analyzer} \textit{- Research Symposium 2016, Uva Wellasssa University}}
+	\vspace{6pt}
+	
+	\item {\textbf{Medical Expert System for Analyzing Heart Diseases in Sri Lanka} \textit{- Research Symposium 2016, Uva Wellasssa University}}
+	\vspace{6pt}
+	
+	\item {\textbf{A Conceptual Model for Internet Based Carpooling System via a Visibility Assessment to Match the Requirement of Sri Lankan Community}\textit{- Research Symposium 2016, Uva Wellasssa University}}
+	\vspace{6pt}
+	
+
+	
+	\item {\textbf{Pronunciation Training System to Enhance Sinhala and Tamil Language Skills}\textit{- Research Symposium 2016, Uva Wellasssa University}}
+	\vspace{6pt}
+	
+	\item {\textbf{Virtual Laboratory System for A/L Physics Units of Electricity}\textit{- Research Symposium 2016, Uva Wellasssa University}}
+	\vspace{6pt}
+		%%%%%%%%%%%%%%%
+	\item {\textbf{Project LangfiKA - Open Source Language Enhancement Tool}\textit{- International Research Symposium, Uva Wellassa University, 2017 (IRSUWU2017)}}
+	\vspace{6pt}
+		
+	\item {\textbf{High Efficient Tamil Speech Recognition System for Sri Lanka}\textit{- International Research Symposium, Uva Wellassa University, 2017 (IRSUWU2017)}}
+	\vspace{6pt}
+	
+	\item {\textbf{High Standard Exam Paper Maker}\textit{- International Research Symposium, Uva Wellassa University, 2017 (IRSUWU2017)}}
+	\vspace{6pt}
+	
+	\item {\textbf{Smart Bulleting Board}\textit{- International Research Symposium, Uva Wellassa University, 2017 (IRSUWU2017)}}
+	\vspace{6pt}
+	
+	\item {\textbf{Analyzing Accuracy of Existing Feature Extraction Methods}\textit{- International Research Symposium, Uva Wellassa University, 2017 (IRSUWU2017)}}
+	\vspace{6pt}
+	
+	\item {\textbf{Vision Based Autonomous Micro Areal Vehicle with Graphic Processing Unit Acceleration}\textit{- International Research Symposium, Uva Wellassa University, 2017 (IRSUWU2017)}}
+	\vspace{6pt}
+	
+	\item {\textbf{Smart Light Controlling System for Lecture Halls}\textit{- International Research Symposium, Uva Wellassa University, 2017 (IRSUWU2017)}}
+	\vspace{6pt}
+	
+	
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\renewcommand{\refname}{Publications}
+%\renewcommand{\bibliographyitemlabel}{\@{\arabic{enumiv}}}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}  
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+
+\section{Professional qualifications}
+\begin{itemize}
+	\item Followed a certificate course on Teaching in Higher Education (160 hour course - accredited by the University Grants Commission Sri Lanka)
+	
+	\vspace{6pt}
+	
+	\item Participated in the workshop on Research Management Tools and Techniques at the Staff Development Center, Uva Wellassa University, Sri Lanka
+	
+	\vspace{6pt}
+	
+	\item Successfully completed the Workshop on Scientific Writing conducted for the PhD and MPhil candidates at Faculty of Engineering, University of Peradeniya, Sri Lanka
+	
+	\vspace{6pt}
+	
+	\item Followed a course on Computer Hardware at the Vocational Training Authority of Sri Lanka
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Membership of professional societies}
+\begin{itemize}
+	\item Member of the Engineering Alumni, University of Peradeniya (2011 - Present)
+	
+		\vspace{2pt}
+		
+	\item Associate Member of the Institution of Engineers, Sri Lanka (2012 - Present)
+	
+		\vspace{2pt}
+		
+	\item Member of the IEEE (2014 - Present)
+	
+		\vspace{2pt}
+		
+	\item Student councilor of the IEEE, Uva Wellassa University Chapter (2014 - 2016)
+	
+	 \vspace{2pt}
+	 
+	 \item Member of the Internet Society (2016 - Present)
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+\section{Extra-curricular activity}
+
+\vspace{2pt}
+
+\begin{itemize}
+
+\item Member of the School Computer Club
+
+\vspace{2pt}
+
+\item Member of the Sri Lanka School Cricket Association
+\vspace{2pt}
+
+\item Member of the School Astronomy Club
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{References}
+
+%\vspace{6pt}
+ 
+
+\begin{multicols}{2}
+	\begin{itemize}
+	
+		
+		\item Dr. Michael Riegler \\ Research Scientist \\ Simula Research Laboratory \\ P.O. Box 134 \\ 1325 Fornebu \\ Norway\\ +47.40.106-386 \\ \textbf{michael@simula.no} \\
+		
+		\item Prof. Pål Halvorsen \\ Chief Research Scientist \\ Simula Research Laboratory \\ P.O. Box 134 \\ 1325 Fornebu \\ Norway\\ +47.970.80.007 \\ \textbf{paalh@simula.no}
+		%\item Dr. Dhammika Elkaduwe \\ Head of the department \\ Department of Computer Engineering \\ University of Peradeniya \\ Sri Lanka \\ +94.81.239-3913 \\ \textbf{dhammika.elkaduwa@gmail.lk}
+		\columnbreak
+	%	\item Dr. J. Ekanayake \\ Senior Lecturer \\ Department of Computer Science and Tech: \\ Uva Wellassa University \\ Sri Lanka \\ +94.71.195-4433 \\ \textbf{jayalathek@appsc.sab.ac.lk } \\
+		\item Associate. Prof. Hugo Lewi Hammer \\Oslo and Akershus University College of Applied Sciences\\ P.O. Box 4 St. Olavs plass\\N-0130 OSLO \\ Norway\\ +47.672.38.692 \\ \textbf{hugoh@oslomet.no}\\
+		
+		\item Dr. Roshan G. Ragel \\ 	Senior Lecturer \\ Department of Computer Engineering \\ University of Peradeniya \\ Sri Lanka \\ +94.81.239-3914 \\ \textbf{ragelrg@gmail.com} \\
+	\end{itemize}
+\end{multicols}
+
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\renewcommand{\refname}{Publications}
+%\renewcommand{\bibliographyitemlabel}{\@{\arabic{enumiv}}}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
